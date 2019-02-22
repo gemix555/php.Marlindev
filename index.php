@@ -1,16 +1,8 @@
 <?php
+require 'class/QueryBuilder.php';
+$tak = new QueryBuilder();
+$tasks = $tak->getAllTasks();
 
-
-
-function getAllTasks()
-{
-    $pdo = new PDO("mysql:host=192.168.10.10; dbname=php.test", "homestead", "secret");
-    $sql = "SELECT * FROM tasks";
-    $statement = $pdo->prepare($sql);
-    $statement->execute();
-    $tasks = $statement->fetchAll(2);
-    return $tasks;
-}
 ?>
 <!doctype html>
 <html lang="en">
@@ -38,7 +30,7 @@ function getAllTasks()
                  </tr>
                 </thead>
                 <tbody>
-                <?php foreach (getAllTasks() as $task): ?>
+                <?php foreach ($tasks as $task): ?>
                     <tr>
                         <td><?php echo $task['id'] ;?></td>
                         <td><?php echo $task['title'];?></td>

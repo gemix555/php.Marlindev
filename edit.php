@@ -1,19 +1,7 @@
 <?php
-
-function getTask($id)
-{
-    $pdo = new PDO("mysql:host=192.168.10.10; dbname=php.test", "homestead", "secret");
-    $sql = "SELECT * FROM tasks WHERE id=:id";
-    $statement =$pdo->prepare($sql);
-
-    $statement->bindParam(":id", $id);
-
-    $statement->execute();
-    $result = $statement->fetch(2);
-    return $result;
-}
-
-$result = getTask($_GET['id']);
+require 'class/QueryBuilder.php';
+$tak = new QueryBuilder();
+$result = $tak->showTask($_GET['id']);
 
 ?>
 <!doctype html>
@@ -33,7 +21,7 @@ $result = getTask($_GET['id']);
         <div class="col-12">
             <h1>Edit Task</h1>
 
-            <form action="update.php" method="post">
+            <form action="store.php" method="post">
                 <input type="hidden" name="id" value="<?php echo $result['id'] ;?>">
                 <div class="form-group">
                     <label for="title">Text</label>

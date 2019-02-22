@@ -1,19 +1,7 @@
 <?php
-
-function showTask($id)
-{
-    $pdo = new PDO("mysql:host=192.168.10.10; dbname=php.test", "homestead", "secret");
-    $sql = "SELECT * FROM tasks WHERE id=:id";
-    $statement =$pdo->prepare($sql);
-
-    $statement->bindParam(":id", $id);
-
-    $statement->execute();
-    $result = $statement->fetch(2);
-    return $result;
-}
-
-$result = showTask($_GET['id']);
+require 'class/QueryBuilder.php';
+$tak = new QueryBuilder();
+$tasks = $tak->showTask($_GET['id']);
 
 ?>
 
@@ -32,9 +20,9 @@ $result = showTask($_GET['id']);
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1><?php echo $result['title'] ?></h1>
+            <h1><?php echo $tasks['title'] ;?></h1>
             <p>
-                <?php echo $result['content'] ?>
+                <?php echo $tasks['content'] ;?>
             </p>
             <a href="index.php" class="btn btn-success">Go back</a>
         </div>
