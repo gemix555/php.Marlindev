@@ -37,12 +37,13 @@ class QueryBuilder
 
     public function addTask($post)
     {
-            var_dump($post);
+
         $sql = "INSERT INTO tasks(title,content) VALUES (:title, :content)";
 
         $statement =$this->pdo->prepare($sql);
 
         $statement->execute($post);
+
 
         header("Location:/");
 
@@ -55,7 +56,7 @@ class QueryBuilder
         $statement = $this->pdo->prepare($sql);
 
         $statement->execute($post);
-
+        //var_dump($post);
         header("Location:/");
     }
 
@@ -74,7 +75,6 @@ class QueryBuilder
 
     public function deleteTask($id)
     {
-
 
         $sql = "DELETE FROM tasks  WHERE id=:id";
 

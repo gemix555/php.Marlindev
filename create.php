@@ -26,7 +26,7 @@
                     <textarea name="content" id="content" cols="30" rows="5"></textarea>
                 </div>
                 <div class="form-group">
-                    <button name="create" class="btn btn-success" type="submit">Submit</button>
+                    <button  class="btn btn-success" type="submit">Submit</button>
                 </div>
             </form>
 

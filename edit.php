@@ -1,7 +1,7 @@
 <?php
 require 'class/QueryBuilder.php';
 $tak = new QueryBuilder();
-$result = $tak->showTask($_GET['id']);
+$result = $tak->getTask($_GET['id']);
 
 ?>
 <!doctype html>
@@ -21,7 +21,7 @@ $result = $tak->showTask($_GET['id']);
         <div class="col-12">
             <h1>Edit Task</h1>
 
-            <form action="store.php" method="post">
+            <form action="update.php" method="post">
                 <input type="hidden" name="id" value="<?php echo $result['id'] ;?>">
                 <div class="form-group">
                     <label for="title">Text</label>

@@ -37,7 +37,7 @@ $tasks = $tak->getAllTasks();
                         <td>
                             <a href="show.php?id=<?php echo $task['id'] ?>" class="btn btn-success">Show</a>
                             <a href="edit.php?id=<?php echo $task['id'] ?>" class="btn btn-warning">Edit</a>
-                            <a onclick="return confirm('Вы уверены что надо удалить ?')" href="delete.php?id=<?php echo $task['id'] ?>" class="btn btn-danger">Delete</a>
+                            <a  href="delete.php?id=<?php echo $task['id'] ?>" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
