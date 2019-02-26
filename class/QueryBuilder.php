@@ -49,9 +49,8 @@ class QueryBuilder
         }
         $fields = rtrim($field, ',');
 
-        //$keys = array_keys($data);
         $sql = "UPDATE $table SET $fields WHERE id=:id";
-        //var_dump($sql);die;
+
         $statement = $this->pdo->prepare($sql);
 
         $statement->execute($data);
