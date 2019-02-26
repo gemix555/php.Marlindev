@@ -1,7 +1,7 @@
 <?php
 require 'class/QueryBuilder.php';
 $tak = new QueryBuilder();
-$result = $tak->getTask($_GET['id']);
+$result = $tak->getOne('tasks', $_GET['id']);
 
 ?>
 <!doctype html>

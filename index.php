@@ -1,7 +1,8 @@
 <?php
 require 'class/QueryBuilder.php';
 $tak = new QueryBuilder();
-$tasks = $tak->getAllTasks();
+
+$tasks = $tak->all('tasks');
 
 ?>
 <!doctype html>
@@ -21,6 +22,7 @@ $tasks = $tak->getAllTasks();
         <div class="col-12">
             <h1>Index</h1>
             <a class="btn btn-success" href="create.php">Add Task</a>
+            <a class="btn btn-success" href="posts.php">Add Posts</a>
             <table class="table">
                 <thead>
                  <tr>
@@ -37,7 +39,7 @@ $tasks = $tak->getAllTasks();
                         <td>
                             <a href="show.php?id=<?php echo $task['id'] ?>" class="btn btn-success">Show</a>
                             <a href="edit.php?id=<?php echo $task['id'] ?>" class="btn btn-warning">Edit</a>
-                            <a  href="delete.php?id=<?php echo $task['id'] ?>" class="btn btn-danger">Delete</a>
+                            <a onclick="#" href="delete.php?id=<?php echo $task['id'] ?>" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

@@ -3,4 +3,7 @@ require 'class/QueryBuilder.php';
 
 $db = new QueryBuilder();
 
-$db->updateTask($_POST);
+$table = 'tasks';
+$data =$_POST;
+$db->update($table, $data);
+//$db->updateTask( $_POST);

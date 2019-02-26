@@ -14,18 +14,19 @@ class QueryBuilder
 
     }
 
-    public function getAllTasks()
+    public function all($table)
     {
-        $sql = "SELECT * FROM tasks";
+        $sql = "SELECT * FROM $table";
         $statement = $this->pdo->prepare($sql);
         $statement->execute();
-        $tasks = $statement->fetchAll(2);
-        return $tasks;
+        $result = $statement->fetchAll(2);
+        return $result;
     }
 
-    function showTask($id)
+    function getOne($table,$id)
     {
-        $sql = "SELECT * FROM tasks WHERE id=:id";
+       // var_dump($table,$id);
+        $sql = "SELECT * FROM $table WHERE id=:id";
         $statement =$this->pdo->prepare($sql);
 
         $statement->bindParam(":id", $id);
@@ -35,45 +36,45 @@ class QueryBuilder
         return $result;
     }
 
-    public function addTask($post)
+
+
+    public function update($table, $data)
     {
+        $field = '';
 
-        $sql = "INSERT INTO tasks(title,content) VALUES (:title, :content)";
+        foreach ($data as $k => $v)
+        {
+            $field.= $k.'=:' . $k . ',';
 
-        $statement =$this->pdo->prepare($sql);
+        }
+        $fields = rtrim($field, ',');
 
-        $statement->execute($post);
-
-
-        header("Location:/");
-
-    }
-    public function updateTask($post)
-    {
-
-        $sql = "UPDATE tasks SET title=:title,content=:content WHERE id=:id";
-
+        //$keys = array_keys($data);
+        $sql = "UPDATE $table SET $fields WHERE id=:id";
+        //var_dump($sql);die;
         $statement = $this->pdo->prepare($sql);
 
-        $statement->execute($post);
-        //var_dump($post);
+        $statement->execute($data);
+
         header("Location:/");
     }
 
-    public function getTask($id)
+    public function store($table, $data)
     {
 
-        $sql = "SELECT * FROM tasks WHERE id=:id";
-        $statement =$this->pdo->prepare($sql);
+        var_dump($data);
+        $keys = array_keys($data);
+        $stingOfKeys = implode(',', $keys);
+        $placeholders = ':'. implode(',:', $keys);
+        $sql = "INSERT INTO $table($stingOfKeys) VALUES ($placeholders)";
+        $statement = $this->pdo->prepare($sql);
 
-        $statement->bindParam(":id", $id);
+        $statement->execute($data);
 
-        $statement->execute();
-        $result = $statement->fetch(2);
-        return $result;
+        header("Location:/");
     }
 
-    public function deleteTask($id)
+    public function delete($id)
     {
 
         $sql = "DELETE FROM tasks  WHERE id=:id";

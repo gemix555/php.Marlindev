@@ -3,4 +3,4 @@ require 'class/QueryBuilder.php';
 
 $db = new QueryBuilder();
 
-$db->deleteTask($_GET);
+$db->delete($_GET);

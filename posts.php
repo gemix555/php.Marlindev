@@ -1,11 +1,3 @@
-<?php
-require 'class/QueryBuilder.php';
-$tak = new QueryBuilder();
-$id = $_GET['id'];
-$result = $tak->getOne('tasks', $id);
-
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,13 +13,30 @@ $result = $tak->getOne('tasks', $id);
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1><?php echo $result['title'] ;?></h1>
-            <p>
-                <?php echo $result['content'] ;?>
-            </p>
+            <h1>Create Task</h1>
+
+            <form action="store.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Text</label>
+                    <input type="text" name="name" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="text">Description</label>
+                    <textarea name="text" id="text" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image</label>
+                    <input type="file" name="image" class="form-control" id="image">
+                </div>
+                <div class="form-group">
+                    <button  class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </form>
+
             <a href="index.php" class="btn btn-success">Go back</a>
         </div>
     </div>
 </div>
 </body>
 </html>
+

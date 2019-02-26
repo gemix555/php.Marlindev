@@ -4,7 +4,14 @@ require 'class/QueryBuilder.php';
 
 $db = new QueryBuilder();
 
+//$data = [
+//  'name' => 'ivan',
+//  'text' => 'durak',
+//  'image' => 'cat.png'
+//];
 
-    $db->addTask($_POST);
+    $data = $_POST;
+
+    $db->store('tasks', $data);
 
 
