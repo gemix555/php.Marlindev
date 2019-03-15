@@ -1,52 +1,31 @@
 <?php
-require 'class/QueryBuilder.php';
-$tak = new QueryBuilder();
 
-$tasks = $tak->all('tasks');
+if(!session_status())
+{
+    session_start();
+}
+require __DIR__ . '/vendor/autoload.php';
 
-?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>Index</h1>
-            <a class="btn btn-success" href="create.php">Add Task</a>
-            <a class="btn btn-success" href="posts.php">Add Posts</a>
-            <table class="table">
-                <thead>
-                 <tr>
-                     <th>ID</th>
-                     <th>Title</th>
-                     <th>Actions</th>
-                 </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($tasks as $task): ?>
-                    <tr>
-                        <td><?php echo $task['id'] ;?></td>
-                        <td><?php echo $task['title'];?></td>
-                        <td>
-                            <a href="show.php?id=<?php echo $task['id'] ?>" class="btn btn-success">Show</a>
-                            <a href="edit.php?id=<?php echo $task['id'] ?>" class="btn btn-warning">Edit</a>
-                            <a onclick="#" href="delete.php?id=<?php echo $task['id'] ?>" class="btn btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-</body>
-</html>
+use App\QueryBuilder;
+use App\Auth;
+
+$db = new QueryBuilder();
+
+$user = new Auth($db);
+
+$url = $_SERVER['REQUEST_URI'];
+var_dump($db);
+
+if($url == '/')
+{
+    require_once 'index.php';
+
+}elseif ($url == '/views/users/index.php')
+{
+    require_once 'views/users/index.php';
+
+}elseif ($url == '/views/tasks/index.php')
+{
+    require_once 'views/tasks/index.php';
+
+}else{ require_once  'views/404.php';}
