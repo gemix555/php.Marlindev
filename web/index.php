@@ -1,26 +1,11 @@
 <?php
 require '../vendor/autoload.php';
-
-
-//use App\controllers\HomeController;
-
-$url = $_SERVER['REQUEST_URI'];
-
-$controller = [];
-
-if($url == '/')
-{
-    $controller = ["App\controllers\HomeController" , "index"];
-
-}elseif($url == '/about')
-{
-    $controller = ["App\controllers\HomeController", "about"];
-}
-
-if(empty($controller))
-{
-    dd('404|Error');
-}else
-    {
-        call_user_func($controller);
-    }
+require '../app/start.php';
+//use League\Plates\Engine;
+//// Create new Plates instance
+//$templates = new Engine('../app/views/');
+//$myTasks = [
+//    "first task", "clean house", "do homework"
+//];
+//// Render a template
+//echo $templates->render('tasks', ['tasksInView' => $myTasks]);
