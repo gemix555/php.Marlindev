@@ -23,13 +23,11 @@ class HomeController
 
     public  function index()
     {
-        // Create new Plates instance
-        $templates = new Engine('../app/views/');
         $myTasks = [
             "first task", "clean house", "do homework"
         ];
         // Render a template
-        echo $templates->render('tasks', ['tasksInView' => $myTasks]);
+        echo $this->view->render('tasks', ['tasksInView' => $myTasks]);
     }
 
     public  function about()

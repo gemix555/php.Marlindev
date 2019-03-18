@@ -1,9 +1,13 @@
 <?php
 
 use DI\Container;
+use League\Plates\Engine;
+use DI\ContainerBuilder;
 
-$containerBuilder = new \DI\ContainerBuilder();
+$containerBuilder = new ContainerBuilder();
+
 $containerBuilder->addDefinitions([
+
     Engine::class => function()
     {
         return new Engine('../app/views');
@@ -44,7 +48,7 @@ switch ($routeInfo[0]) {
         $handler = $routeInfo[1];
         $vars = $routeInfo[2];
         //var_dump($handler, $vars);die;
-        (new Container())->call($handler, $vars);
+        $container->call($handler, $vars);
         // ... call $handler with $vars
         break;
 }
