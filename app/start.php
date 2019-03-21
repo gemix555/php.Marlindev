@@ -1,8 +1,11 @@
 <?php
 
-use DI\Container;
+
 use League\Plates\Engine;
 use DI\ContainerBuilder;
+use Aura\SqlQuery\QueryFactory;
+use FastRoute\Dispatcher;
+//use DI\Container;
 
 $containerBuilder = new ContainerBuilder();
 
@@ -12,13 +15,21 @@ $containerBuilder->addDefinitions([
     {
         return new Engine('../app/views');
     },
+    QueryFactory::class =>function()
+    {
+        return new QueryFactory('mysql');
+    },
+    PDO::class => function()
+    {
+        return new PDO("mysql:host=192.168.10.10; dbname=php.test", "homestead", "secret" );
+    }
 
 ]);
 
 $container = $containerBuilder->build();
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/users', ["App\controllers\HomeController", "index"]);
+    $r->addRoute('GET', '/tasks', ["App\controllers\HomeController", "index"]);
     // {id} must be a number (\d+)
    // $r->addRoute('GET', '/user/{id:\d+}', 'get_user_handler');
     // The /{title} suffix is optional
@@ -37,18 +48,17 @@ $uri = rawurldecode($uri);
 
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 switch ($routeInfo[0]) {
-    case FastRoute\Dispatcher::NOT_FOUND:
-        // ... 404 Not Found
+    case Dispatcher::NOT_FOUND:
+        echo '404 Not Found';
         break;
-    case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
+    case Dispatcher::METHOD_NOT_ALLOWED:
         $allowedMethods = $routeInfo[1];
-        // ... 405 Method Not Allowed
+        echo '405 Method Not Allowed';
         break;
-    case FastRoute\Dispatcher::FOUND:
+    case Dispatcher::FOUND:
         $handler = $routeInfo[1];
         $vars = $routeInfo[2];
-        //var_dump($handler, $vars);die;
-        $container->call($handler, $vars);
-        // ... call $handler with $vars
+    //var_dump($handler);
+       $container->call($handler, $vars);
         break;
 }

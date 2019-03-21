@@ -124,6 +124,7 @@ class ComposerStaticIniteaaa5e90e92d37ea22b79a48c0bd9c4b
         ),
         'A' => 
         array (
+            'Aura\\SqlQuery\\' => 14,
             'App\\' => 4,
         ),
     );
@@ -404,6 +405,10 @@ class ComposerStaticIniteaaa5e90e92d37ea22b79a48c0bd9c4b
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Aura\\SqlQuery\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/sqlquery/src',
         ),
         'App\\' => 
         array (

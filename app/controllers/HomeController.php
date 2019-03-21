@@ -2,32 +2,43 @@
 
 namespace App\controllers;
 
+use Aura\SqlQuery\QueryFactory;
 use League\Plates\Engine;
-use App\models\QueryBuilder;
+use PDO;
 
 class HomeController
 {
 
-    private $builder;
-    /**
-     * @var Engine
-     */
-    private $view;
+    public $view;
 
-    public function __construct(QueryBuilder $builder, Engine $view)
+    public $queryFactory;
+
+    public $pdo;
+
+    private function __construct(Engine $view, QueryFactory $queryFactory, PDO $pdo)
     {
 
-        $this->builder = $builder;
         $this->view = $view;
+        $this->queryFactory = $queryFactory;
+        $this->pdo = $pdo;
     }
+
 
     public  function index()
     {
-        $myTasks = [
-            "first task", "clean house", "do homework"
-        ];
-        // Render a template
-        echo $this->view->render('tasks', ['tasksInView' => $myTasks]);
+
+        $select = $this->queryFactory->newSelect();
+        $select->cols(["*"])
+            ->from('tasks');
+
+        $sth = $this->pdo->prepare($select->getStatement());
+
+        $sth->execute($select->getBindValues());
+
+        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+        var_dump($result);
+
+        echo $this->view->render('show', ['tasksInView' => $result]);
     }
 
     public  function about()

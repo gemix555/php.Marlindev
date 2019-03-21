@@ -1,780 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d754d006-24a2-4fca-9e08-420ca72b8549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/ImageManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/QueryBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/start.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tasks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/bin/php-parse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/Database/MySQL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/Database/PostgreSQL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/Database/SQLite.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/Migration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/src/Administration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/src/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/src/Exceptions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/src/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/src/Status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/src/UserManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/auth/tests/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/src/Base64.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/src/Throwable/DecodingError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/src/Throwable/EncodingError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/src/Throwable/Error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/src/Throwable/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/base64/tests/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/.travis-ci-apache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/Migration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/src/Cookie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/src/Session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/cookie/tests/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/DataSource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Dsn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/ErrorHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Measurement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/PdoDataSource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/PdoDatabase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/PdoDsn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Profiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/SimpleMeasurement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/SimpleProfiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/BeginTransactionFailureException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/CommitTransactionFailureException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/DatabaseNotFoundError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/EmptyValueListError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/EmptyWhereClauseError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/Error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/IntegrityConstraintViolationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/NoDatabaseSelectedError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/RollBackTransactionFailureException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/SyntaxError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/TableNotFoundError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/TransactionFailureException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/UnknownColumnError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/src/Throwable/WrongCredentialsError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/db/tests/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/Migration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/src/ResponseHeader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/delight-im/http/tests/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Analyzer/AstAnalyzer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Analyzer/ClosureAnalyzer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Analyzer/Token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Analyzer/TokenAnalyzer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Analyzer/Visitor/ClosureLocatorVisitor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Analyzer/Visitor/MagicConstantVisitor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Analyzer/Visitor/ThisDetectorVisitor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Exception/ClosureAnalysisException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Exception/ClosureSerializationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Exception/ClosureUnserializationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Exception/SuperClosureException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/SerializableClosure.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Serializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/SerializerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/CNAME" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/_data/images.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/_data/menu.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/_data/project.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/_layouts/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/apple-touch-icon-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/changelog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/css/custom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/engine/extensions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/engine/file-extensions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/engine/folders.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/engine/functions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/engine/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/extensions/asset.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/extensions/uri.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/installation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/simple-example.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/data.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/escaping.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/functions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/inheritance.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/layouts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/nesting.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/sections.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/docs/templates/syntax.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/example/example.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/example/templates/layout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/example/templates/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/example/templates/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Engine.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/Asset.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/ExtensionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Extension/URI.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/Data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/Directory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/FileExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/Folder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/Folders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/Func.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/Functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/Name.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/league/plates/src/Template/Template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/UPGRADE-1.0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/UPGRADE-2.0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/UPGRADE-3.0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/UPGRADE-4.0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/bin/php-parse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/0_Introduction.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/2_Usage_of_basic_components.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/AST_builders.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Constant_expression_evaluation.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Error_handling.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/FAQ.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/JSON_representation.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Lexer.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Name_resolution.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Performance.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Pretty_printing.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/Walking_the_AST.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/parser.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/php5.y" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/php7.y" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/rebuildParsers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/tokens.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/grammar/tokens.y" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Class_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Declaration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/FunctionLike.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Function_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Interface_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Method.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Namespace_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Param.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Property.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/TraitUse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/TraitUseAdaptation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Trait_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Use_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderHelpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ConstExprEvaluationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ConstExprEvaluator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Collecting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Internal/DiffElem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Internal/Differ.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Internal/PrintableNewAnonClassNode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Internal/TokenStream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/JsonDecoder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Lexer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Lexer/Emulative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NameContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Arg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Const_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayDimFetch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Array_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Assign.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseOr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseXor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Coalesce.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Concat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Minus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mul.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Plus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Pow.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftLeft.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftRight.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignRef.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BitwiseAnd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BitwiseOr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BitwiseXor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BooleanAnd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BooleanOr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Coalesce.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Concat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Div.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Equal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Greater.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/GreaterOrEqual.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Identical.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/LogicalAnd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/LogicalOr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/LogicalXor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Minus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Mod.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Mul.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/NotEqual.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/NotIdentical.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Plus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Pow.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/ShiftLeft.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/ShiftRight.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Smaller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/SmallerOrEqual.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Spaceship.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BitwiseNot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BooleanNot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Array_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Bool_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Double.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Int_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Object_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/String_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Unset_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ClassConstFetch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Clone_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Closure.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ClosureUse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ConstFetch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Empty_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ErrorSuppress.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Eval_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Exit_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/FuncCall.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Include_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Instanceof_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Isset_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/List_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/MethodCall.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/New_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostDec.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostInc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreDec.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreInc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Print_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PropertyFetch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ShellExec.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticCall.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticPropertyFetch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Ternary.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryMinus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryPlus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Variable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/YieldFrom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Yield_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/FunctionLike.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Identifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Name.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Name/FullyQualified.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Name/Relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/NullableType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Param.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/DNumber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Encapsed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/EncapsedStringPart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Class_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Dir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Function_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Line.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Method.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Namespace_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Trait_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Break_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Case_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Catch_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/ClassConst.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/ClassLike.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/ClassMethod.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Class_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Const_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Continue_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/DeclareDeclare.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Declare_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Do_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Echo_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/ElseIf_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Else_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Expression.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Finally_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/For_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Foreach_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Function_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Global_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Goto_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/GroupUse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/HaltCompiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/If_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/InlineHTML.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Interface_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Label.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Namespace_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Nop.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Property.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/PropertyProperty.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Return_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/StaticVar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Static_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Switch_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Throw_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation/Alias.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation/Precedence.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Trait_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TryCatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Unset_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/UseUse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Use_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/While_.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/VarLikeIdentifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeAbstract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeDumper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeFinder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeTraverser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeTraverserInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeVisitorAbstract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Parser/Tokens.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ParserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/ClassTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/FunctionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/InterfaceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/MethodTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/NamespaceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/ParamTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/PropertyTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/TraitTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/TraitUseAdaptationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/TraitUseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/UseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/BuilderFactoryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeParsingTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeTestAbstract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeTestParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CommentTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ConstExprEvaluatorTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ErrorHandler/CollectingTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ErrorHandler/ThrowingTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ErrorTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Internal/DifferTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/JsonDecoderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Lexer/EmulativeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/LexerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NameContextTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/IdentifierTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/NameTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Scalar/MagicConstTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Scalar/StringTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/ClassConstTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/ClassMethodTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/ClassTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/InterfaceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/PropertyTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeAbstractTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeDumperTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeFinderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeTraverserTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeVisitor/FindingVisitorTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeVisitor/FirstFindingVisitorTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeVisitor/NameResolverTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Parser/MultipleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Parser/Php5Test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Parser/Php7Test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ParserFactoryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ParserTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/PrettyPrinterTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/addingPropertyType.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/anonClasses.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/basic.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/blockConversion.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/comments.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/fixup.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/inlineHtml.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/insertionOfNullable.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/listInsertion.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/listInsertionIndentation.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/listRemoval.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/modifierChange.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/nopCommentAtEnd.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/removalViaNull.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/removingPropertyType.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/formatPreservation/traitAlias.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/blockComments.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/commentAtEndOfClass.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/comments.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/errorHandling/eofError.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/errorHandling/lexerErrors.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/errorHandling/recovery.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/arrayDef.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/arrayDestructuring.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/assign.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/assignNewByRef.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/cast.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/clone.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/closure.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/comparison.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/constant_expr.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/errorSuppress.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/exit.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/args.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/constFetch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/constantDeref.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/funcCall.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/newDeref.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/objectAccess.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/simpleArrayAccess.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/staticCall.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/fetchAndCall/staticPropertyFetch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/includeAndEval.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/issetAndEmpty.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/listReferences.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/listWithKeys.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/logic.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/math.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/new.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/newWithoutClass.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/print.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/shellExec.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/ternaryAndCoalesce.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/trailingCommas.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/uvs/globalNonSimpleVarError.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/uvs/indirectCall.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/uvs/isset.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/uvs/misc.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/uvs/new.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/uvs/staticProperty.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/expr/variable.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/exprStmtMode.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/constantString.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/docString.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/docStringNewlines.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/encapsedNegVarOffset.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/encapsedString.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/flexibleDocString.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/flexibleDocStringErrors.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/float.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/int.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/invalidOctal.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/magicConst.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/scalar/unicodeEscape.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/semiReserved.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/blocklessStatement.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/abstract.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/anonymous.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/conditional.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/constModifierErrors.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/constModifiers.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/final.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/implicitPublic.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/interface.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/modifier.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/name.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/php4Style.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/propertyTypes.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/simple.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/staticMethod.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/class/trait.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/const.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/controlFlow.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/declare.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/echo.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/builtinTypeDeclarations.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/byRef.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/conditional.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/defaultValues.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/nullableTypes.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/returnTypes.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/specialVars.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/typeDeclarations.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/variadic.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/function/variadicDefaultValue.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/basic.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/yieldPrecedence.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/generator/yieldUnaryPrecedence.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompiler.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerInvalidSyntax.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerOffset.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerOutermostScope.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/hashbang.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/if.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/inlineHTML.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/loop/do.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/loop/for.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/loop/foreach.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/loop/while.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/multiCatch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/alias.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/braced.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/commentAfterNamespace.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/groupUse.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/groupUseErrors.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/groupUsePositions.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/groupUseTrailingComma.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/invalidName.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/mix.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/name.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/nested.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/notBraced.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/nsAfterHashbang.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/outsideStmt.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/namespace/outsideStmtInvalid.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/switch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/tryCatch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/tryWithoutCatch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/parser/stmt/unset.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/comments.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/commentsInCommaList.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/anonymousClass.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/arrayDestructuring.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/call.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/closure.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/constant_deref.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/docStrings.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/include.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/intrinsics.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/list.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/literals.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/numbers.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/operators.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/parentheses.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/shortArraySyntax.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/stringEscaping.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/uvs.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/variables.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/expr/yield.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/inlineHTMLandPHPtest.file-test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/nestedInlineHTML.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/onlyInlineHTML.file-test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/onlyPHP.file-test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/alias.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/break_continue.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/class.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/class_const.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/const.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/declare.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/do_while.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/for.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/foreach.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/function_signatures.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/global_static_variables.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/goto.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/groupUse.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/haltCompiler.file-test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/if.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/multiCatch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/namespaces.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/nullable_types.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/properties.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/switch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/throw.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/traitUse.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/tryCatch.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/while.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/updateTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test_old/run-php-src.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test_old/run.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/doc/parameter-resolvers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/CallableResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/Exception/InvocationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/Exception/NotCallableException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/Exception/NotEnoughParametersException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/Invoker.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/InvokerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/ParameterResolver/AssociativeArrayResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/ParameterResolver/Container/ParameterNameContainerResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/ParameterResolver/Container/TypeHintContainerResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/ParameterResolver/DefaultValueResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/ParameterResolver/NumericArrayResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/ParameterResolver/ParameterResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/ParameterResolver/ResolverChain.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/ParameterResolver/TypeHintResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/invoker/src/Reflection/CallableReflection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/.coveralls.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/.gitstats.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/.php_cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/.phpstorm.meta.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/404.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/change-log.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/couscous.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/phpstan.neon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Annotation/Inject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Annotation/Injectable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/CompiledContainer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Compiler/Compiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Compiler/ObjectCreationCompiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Compiler/RequestedEntryHolder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Compiler/Template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Container.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/ContainerBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/ArrayDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/ArrayDefinitionExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/AutowireDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/DecoratorDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Definition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Dumper/ObjectDefinitionDumper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/EnvironmentVariableDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Exception/InvalidAnnotation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Exception/InvalidDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/ExtendsPreviousDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/FactoryDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Helper/AutowireDefinitionHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Helper/CreateDefinitionHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Helper/DefinitionHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Helper/FactoryDefinitionHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/InstanceDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/ObjectDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/ObjectDefinition/MethodInjection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/ObjectDefinition/PropertyInjection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Reference.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/ArrayResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/DecoratorResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/DefinitionResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/EnvironmentVariableResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/FactoryResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/InstanceInjector.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/ObjectCreator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/ParameterResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Resolver/ResolverDispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/SelfResolvingDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/AnnotationBasedAutowiring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/Autowiring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/DefinitionArray.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/DefinitionFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/DefinitionNormalizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/DefinitionSource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/MutableDefinitionSource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/NoAutowiring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/ReflectionBasedAutowiring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/SourceCache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Source/SourceChain.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/StringDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/ValueDefinition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/DependencyException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Factory/RequestedEntry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/FactoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Invoker/DefinitionParameterResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Invoker/FactoryParameterResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/NotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/Proxy/ProxyFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/src/functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/php-di/support.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/src/PhpDocReader/AnnotationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/src/PhpDocReader/PhpDocReader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/src/PhpDocReader/PhpParser/TokenParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/src/PhpDocReader/PhpParser/UseStatementParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php56/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php56/Php56.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php56/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php56/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php56/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/Binary.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/BinaryNoFuncOverload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/BinaryOnFuncOverload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/LegacyTestListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/TestListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/TestListenerTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util/composer.json" afterDir="false" />
+    <list default="true" id="d754d006-24a2-4fca-9e08-420ca72b8549" name="Default Changelist" comment="Fatal error: Uncaught DI\Definition\Exception\InvalidDefinition: Entry &quot;App\controllers\HomeController&quot; cannot be resolved: the class is not instantiable Full definition: Object ( class = #NOT INSTANTIABLE# App\controllers\HomeController lazy = false ) in /home/vagrant/code/php.test/vendor/php-di/php-di/src/Definition/Exception/InvalidDefinition.php on line 18">
+      <change afterPath="$PROJECT_DIR$/app/views/show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/.scrutinizer.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/phpunit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/AbstractDmlQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/AbstractQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/DeleteInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/Insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/InsertInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/LimitInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/LimitOffsetInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/OrderByInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/ReturningInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/SelectInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/SubselectInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/UpdateInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/ValuesInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Common/WhereInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Mysql/Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Mysql/Insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Mysql/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Mysql/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Pgsql/Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Pgsql/Insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Pgsql/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Pgsql/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/QueryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/QueryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Quoter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Sqlite/Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Sqlite/Insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Sqlite/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Sqlite/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Sqlsrv/Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Sqlsrv/Insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Sqlsrv/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/src/Sqlsrv/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/AbstractQueryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Common/DeleteTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Common/InsertTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Common/SelectTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Common/UpdateTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/FakeQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Mysql/DeleteTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Mysql/InsertTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Mysql/SelectTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Mysql/UpdateTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Pgsql/DeleteTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Pgsql/InsertTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Pgsql/SelectTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Pgsql/UpdateTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/QueryFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/QuoterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Sqlite/DeleteTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Sqlite/InsertTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Sqlite/SelectTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Sqlite/UpdateTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Sqlsrv/DeleteTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Sqlsrv/InsertTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Sqlsrv/SelectTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/aura/sqlquery/tests/Sqlsrv/UpdateTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tasks.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/semver/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/semver/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/semver/src/Constraint/AbstractConstraint.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/semver/src/Constraint/AbstractConstraint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -790,22 +103,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/app/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="140">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
               <folding>
-                <element signature="e#35#60#0#PHP" expanded="true" />
+                <element signature="e#8#33#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/aura/sqlquery/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="149">
+                <caret line="430" column="45" selection-start-line="430" selection-start-column="45" selection-end-line="430" selection-end-column="45" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -813,35 +129,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tasks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="80">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.php">
+        <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/start.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="29" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="474">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+              <folding>
+                <element signature="e#35#66#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -854,16 +155,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/models/QueryBuilder.php" />
         <option value="$PROJECT_DIR$/app/models/ImageManager.php" />
-        <option value="$PROJECT_DIR$/app/views/tasks.php" />
         <option value="$PROJECT_DIR$/app/views/layout.php" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/app/views/tasks.php" />
+        <option value="$PROJECT_DIR$/app/views/show.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/vendor/php-di/php-di/src/ContainerBuilder.php" />
         <option value="$PROJECT_DIR$/web/index.php" />
+        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/start.php" />
+        <option value="$PROJECT_DIR$/vendor/aura/sqlquery/README.md" />
       </list>
     </option>
+  </component>
+  <component name="PhpDebugGeneral" break_at_first_line="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="php.test" id="4e1e4883-4d83-4056-b935-a2d631a2e878" name="php.test" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/web" remote-root="/home/vagrant/code/php.test/web" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -933,6 +247,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
       <path value="$PROJECT_DIR$/vendor/league/plates" />
+      <path value="$PROJECT_DIR$/vendor/aura/sqlquery" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -949,7 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -971,12 +285,25 @@
             <path>
               <item name="php.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="php.test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php.test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php.test" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -984,6 +311,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1016,7 +344,10 @@
       <workItem from="1552756243985" duration="3404000" />
       <workItem from="1552839908079" duration="599000" />
       <workItem from="1552841153721" duration="2073000" />
-      <workItem from="1552931006737" duration="4410000" />
+      <workItem from="1552931006737" duration="4822000" />
+      <workItem from="1553020450612" duration="1911000" />
+      <workItem from="1553105090476" duration="3260000" />
+      <workItem from="1553187002416" duration="4342000" />
     </task>
     <task id="LOCAL-00001" summary="autoload, HomeController">
       <created>1552671455286</created>
@@ -1032,28 +363,43 @@
       <option name="project" value="LOCAL" />
       <updated>1552672120015</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;composer/composer&quot;: &quot;^1.8&quot;,&#10;        &quot;laravel/lumen-framework&quot;: &quot;^5.8&quot;,&#10;        &quot;nikic/fast-route&quot;: &quot;^1.3&quot;,&#10;        &quot;delight-im/auth&quot;: &quot;^8.1&quot;,&#10;        &quot;php-di/php-di&quot;: &quot;^6.0&quot;,&#10;        &quot;league/plates&quot;: &quot;^3.3&quot;">
+      <created>1552935675513</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552935675513</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;composer/composer&quot;: &quot;^1.8&quot;,&#10;        &quot;laravel/lumen-framework&quot;: &quot;^5.8&quot;,&#10;        &quot;nikic/fast-route&quot;: &quot;^1.3&quot;,&#10;        &quot;delight-im/auth&quot;: &quot;^8.1&quot;,&#10;        &quot;php-di/php-di&quot;: &quot;^6.0&quot;,&#10;        &quot;league/plates&quot;: &quot;^3.3&quot;">
+      <created>1552936077668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552936077668</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14264000" />
+    <option name="totallyTimeSpent" value="24189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14607465" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15186615" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.3297587" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="TypeScript" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3297587" />
       <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -1069,12 +415,27 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="autoload, HomeController" />
     <MESSAGE value="&quot;composer/composer&quot;: &quot;^1.8&quot;,&#10;        &quot;laravel/lumen-framework&quot;: &quot;^5.8&quot;,&#10;        &quot;nikic/fast-route&quot;: &quot;^1.3&quot;,&#10;        &quot;delight-im/auth&quot;: &quot;^8.1&quot;,&#10;        &quot;php-di/php-di&quot;: &quot;^6.0&quot;,&#10;        &quot;league/plates&quot;: &quot;^3.3&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;composer/composer&quot;: &quot;^1.8&quot;,&#10;        &quot;laravel/lumen-framework&quot;: &quot;^5.8&quot;,&#10;        &quot;nikic/fast-route&quot;: &quot;^1.3&quot;,&#10;        &quot;delight-im/auth&quot;: &quot;^8.1&quot;,&#10;        &quot;php-di/php-di&quot;: &quot;^6.0&quot;,&#10;        &quot;league/plates&quot;: &quot;^3.3&quot;" />
+    <MESSAGE value="Fatal error: Uncaught DI\Definition\Exception\InvalidDefinition: Entry &quot;App\controllers\HomeController&quot; cannot be resolved: the class is not instantiable Full definition: Object ( class = #NOT INSTANTIABLE# App\controllers\HomeController lazy = false ) in /home/vagrant/code/php.test/vendor/php-di/php-di/src/Definition/Exception/InvalidDefinition.php on line 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fatal error: Uncaught DI\Definition\Exception\InvalidDefinition: Entry &quot;App\controllers\HomeController&quot; cannot be resolved: the class is not instantiable Full definition: Object ( class = #NOT INSTANTIABLE# App\controllers\HomeController lazy = false ) in /home/vagrant/code/php.test/vendor/php-di/php-di/src/Definition/Exception/InvalidDefinition.php on line 18" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Auth.php" />
     <entry file="file://$PROJECT_DIR$/bufer/index.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-di/php-di/src/Definition/Exception/InvalidDefinition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="1" selection-start-line="6" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ImageManager.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1090,48 +451,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/php-di/php-di/src/ContainerBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="340">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding>
-            <element signature="e#35#60#0#PHP" expanded="true" />
+            <element signature="e#48#73#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/start.php">
+    <entry file="file://$PROJECT_DIR$/vendor/php-di/php-di/src/Container.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        <state relative-caret-position="411">
+          <caret line="268" column="5" lean-forward="true" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="160">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/league/plates/src/Engine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <element signature="e#35#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#8#33#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aura/sqlquery/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="149">
+            <caret line="430" column="45" selection-start-line="430" selection-start-column="45" selection-end-line="430" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
