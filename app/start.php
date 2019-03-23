@@ -1,26 +1,19 @@
 <?php
-
-
-use League\Plates\Engine;
-use DI\ContainerBuilder;
 use Aura\SqlQuery\QueryFactory;
-use FastRoute\Dispatcher;
-//use DI\Container;
+use DI\Container;
+use DI\ContainerBuilder;
+use League\Plates\Engine;
 
-$containerBuilder = new ContainerBuilder();
+$containerBuilder = new ContainerBuilder;
 
 $containerBuilder->addDefinitions([
-
-    Engine::class => function()
-    {
+    Engine::class    =>  function() {
         return new Engine('../app/views');
     },
-    QueryFactory::class =>function()
-    {
+    QueryFactory::class => function() {
         return new QueryFactory('mysql');
     },
-    PDO::class => function()
-    {
+    PDO::class => function() {
         return new PDO("mysql:host=192.168.10.10; dbname=php.test", "homestead", "secret" );
     }
 
@@ -29,11 +22,20 @@ $containerBuilder->addDefinitions([
 $container = $containerBuilder->build();
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/tasks', ["App\controllers\HomeController", "index"]);
-    // {id} must be a number (\d+)
-   // $r->addRoute('GET', '/user/{id:\d+}', 'get_user_handler');
-    // The /{title} suffix is optional
-    //$r->addRoute('GET', '/articles/{id:\d+}[/{title}]', 'get_article_handler');
+    $r->addRoute('GET', '/tasks/create', ["App\controllers\TasksController", "create"]);
+
+    $r->addRoute('GET', '/tasks', ["App\controllers\TasksController", "index"]);
+
+    $r->addRoute('GET', '/tasks/{id}', ["App\controllers\TasksController", "show"]);
+
+    $r->addRoute('POST', '/tasks/store', ["App\controllers\TasksController", "store"]);
+
+    $r->addRoute('GET', '/tasks/{id}/edit', ["App\controllers\TasksController", "edit"]);
+
+    $r->addRoute('POST', '/tasks/{id}/update', ["App\controllers\TasksController", "update"]);
+
+    $r->addRoute('GET', '/tasks/{id}/delete', ["App\controllers\TasksController", "delete"]);
+
 });
 
 // Fetch method and URI from somewhere
@@ -48,17 +50,20 @@ $uri = rawurldecode($uri);
 
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 switch ($routeInfo[0]) {
-    case Dispatcher::NOT_FOUND:
-        echo '404 Not Found';
+    case FastRoute\Dispatcher::NOT_FOUND:
+        // ...
+        dd("404 Not Found");
         break;
-    case Dispatcher::METHOD_NOT_ALLOWED:
+    case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
         $allowedMethods = $routeInfo[1];
-        echo '405 Method Not Allowed';
+        // ...
+        dd("405 Method Not Allowed");
         break;
-    case Dispatcher::FOUND:
+    case FastRoute\Dispatcher::FOUND:
         $handler = $routeInfo[1];
         $vars = $routeInfo[2];
-    //var_dump($handler);
-       $container->call($handler, $vars);
+
+        $container->call($handler, $vars);
+        // ... call $handler with $vars
         break;
 }

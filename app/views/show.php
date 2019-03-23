@@ -1,8 +1,4 @@
+<?php $this->layout('layout') ?>
 
-<?php $this->layout('layout'); ?>
-
-<?php //foreach ($tasksInView as $item): ?>
-<h1><?php //echo $item['title']; ?></h1>
-
-<?php //endforeach; ?>
-<?php var_dump($tasksInView); ?>
+<h1><?php echo $task['title'];?></h1>
+<a href="/tasks">Go Back</a>
