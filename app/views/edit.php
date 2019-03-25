@@ -20,7 +20,7 @@
                     </div>
             </form>
 
-            <a href="tasks.php" class="btn btn-success">Go back</a>
+            <a href="/tasks" class="btn btn-success">Go back</a>
         </div>
     </div>
 </div>

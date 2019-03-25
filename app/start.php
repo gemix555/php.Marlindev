@@ -21,7 +21,8 @@ $containerBuilder->addDefinitions([
 
 $container = $containerBuilder->build();
 
-$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
+$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r)
+{
     $r->addRoute('GET', '/tasks/create', ["App\controllers\TasksController", "create"]);
 
     $r->addRoute('GET', '/tasks', ["App\controllers\TasksController", "index"]);

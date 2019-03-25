@@ -1,34 +1,26 @@
 <?php
 namespace App\controllers;
 
-//use App\models\QueryBuilder;
-use League\Plates\Engine;
-use Aura\SqlQuery\QueryFactory;
-use PDO;
 
+use App\components\Database;
+use League\Plates\Engine;
 
 class TasksController
 {
     private $view;
-    private $queryFactory;
-    private $pdo;
 
-    public function __construct(Engine $view, QueryFactory $queryFactory, PDO $pdo)
+    private $database;
+
+    public function __construct(Engine $view, Database $database)
     {
         $this->view = $view;
-        $this->queryFactory = $queryFactory;
-        $this->pdo = $pdo;
+
+        $this->database = $database;
     }
 
     public function index()
     {
-        $select = $this->queryFactory->newSelect();
-        $select->cols(["*"])
-            ->from('tasks');
-
-        $sth = $this->pdo->prepare($select->getStatement());
-        $sth->execute($select->getBindValues());
-        $myTasks = $sth->fetchAll(PDO::FETCH_ASSOC);
+        $myTasks = $this->database->all('tasks');
 
         echo $this->view->render('tasks', ['tasks' => $myTasks]);
     }
@@ -36,15 +28,7 @@ class TasksController
 
     public function show($id)
     {
-        $select = $this->queryFactory->newSelect();
-        $select->cols(["*"])
-            ->from('tasks')
-            ->where('id=:id')
-            ->bindValues(['id'  =>  $id]);
-
-        $sth = $this->pdo->prepare($select->getStatement());
-        $sth->execute($select->getBindValues());
-        $myTask = $sth->fetch(PDO::FETCH_ASSOC);
+        $myTask = $this->database->getOne('tasks', $id);
 
         echo $this->view->render('show', ['task' => $myTask]);
     }
@@ -56,60 +40,29 @@ class TasksController
 
     public function edit($id)
     {
-        $select = $this->queryFactory->newSelect();
-        $select->cols(["*"])
-            ->from('tasks')
-            ->where('id=:id')
-            ->bindValues(['id'  =>  $id]);
-
-        $sth = $this->pdo->prepare($select->getStatement());
-        $sth->execute($select->getBindValues());
-        $myTask = $sth->fetch(PDO::FETCH_ASSOC);
+        $myTask = $this->database->getOne('tasks', $id);
 
         echo $this->view->render('edit', ['task' => $myTask]);
     }
 
     public function store()
     {
-        $insert = $this->queryFactory->newInsert();
-        $insert
-            ->into('tasks')
-            ->cols($_POST);
-        $sth = $this->pdo->prepare($insert->getStatement());
-        $sth->execute($insert->getBindValues());
+        $this->database->store('tasks', $_POST);
+
         header("Location:/tasks");
     }
 
-
-
     public function update($id)
     {
-        $update = $this->queryFactory->newUpdate();
-        $update
-            ->table('tasks')
-            ->cols($_POST)
-            ->where('id=:id')
-            ->bindValues(['id' => $id]);
-        // prepare the statement
-        $sth = $this->pdo->prepare($update->getStatement());
-
-        // execute with bound values
-        $sth->execute($update->getBindValues());
+        $this->database->update('tasks', $id, $_POST);
 
         header("Location:/tasks");
     }
 
     public function delete($id)
     {
-        $delete = $this->queryFactory->newDelete();
-        $delete
-            ->from('tasks')
-            ->where('id=:id')
-            ->bindValues(['id' => $id]);
-        $sth = $this->pdo->prepare($delete->getStatement());
+        $this->database->remove('tasks', $id);
 
-        // execute with bound values
-        $sth->execute($delete->getBindValues());
         header("Location:/tasks");
     }
 

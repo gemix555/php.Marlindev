@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d754d006-24a2-4fca-9e08-420ca72b8549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tasks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/edit.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="-240">
+              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding>
                 <element signature="e#6#37#0#PHP" expanded="true" />
               </folding>
@@ -37,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tasks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="700">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -46,8 +44,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="440">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/TasksController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <folding>
+                <element signature="e#65#93#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,28 +66,16 @@
         <entry file="file://$PROJECT_DIR$/app/views/create.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/TasksController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="96" column="48" lean-forward="true" selection-start-line="96" selection-start-column="48" selection-end-line="96" selection-end-column="48" />
-              <folding>
-                <element signature="e#65#90#0#PHP" expanded="true" />
-              </folding>
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bufer/app/QueryBuilder.php">
+        <entry file="file://$PROJECT_DIR$/app/components/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="33" />
+            <state relative-caret-position="574">
+              <caret line="89" column="1" lean-forward="true" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -98,7 +96,6 @@
         <option value="$PROJECT_DIR$/vendor/aura/sqlquery/README.md" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/views/layout.php" />
-        <option value="$PROJECT_DIR$/app/start.php" />
         <option value="$PROJECT_DIR$/app/views/store.php" />
         <option value="$PROJECT_DIR$/app/views/delete.php" />
         <option value="$PROJECT_DIR$/app/views/update.php" />
@@ -106,7 +103,9 @@
         <option value="$PROJECT_DIR$/app/views/create.php" />
         <option value="$PROJECT_DIR$/app/views/tasks.php" />
         <option value="$PROJECT_DIR$/app/views/edit.php" />
+        <option value="$PROJECT_DIR$/app/components/Database.php" />
         <option value="$PROJECT_DIR$/app/controllers/TasksController.php" />
+        <option value="$PROJECT_DIR$/app/start.php" />
       </list>
     </option>
   </component>
@@ -205,6 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,12 +227,6 @@
               <item name="php.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="php.test" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php.test" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,7 +238,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,7 +286,10 @@
       <workItem from="1553352683438" duration="144000" />
       <workItem from="1553360919077" duration="4000" />
       <workItem from="1553361265928" duration="43000" />
-      <workItem from="1553361523665" duration="5139000" />
+      <workItem from="1553361523665" duration="6797000" />
+      <workItem from="1553450593998" duration="17000" />
+      <workItem from="1553450635775" duration="1986000" />
+      <workItem from="1553534696333" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="autoload, HomeController">
       <created>1552671455286</created>
@@ -344,18 +340,24 @@
       <option name="project" value="LOCAL" />
       <updated>1553362369329</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="index, show, edit, create, store, update, delete">
+      <created>1553366862978</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553366862978</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36175000" />
+    <option name="totallyTimeSpent" value="40806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16151866" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16731016" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3297587" />
@@ -386,7 +388,9 @@
     <MESSAGE value="Fatal error: Uncaught DI\Definition\Exception\InvalidDefinition: Entry &quot;App\controllers\HomeController&quot; cannot be resolved: the class is not instantiable Full definition: Object ( class = #NOT INSTANTIABLE# App\controllers\HomeController lazy = false ) in /home/vagrant/code/php.test/vendor/php-di/php-di/src/Definition/Exception/InvalidDefinition.php on line 18" />
     <MESSAGE value="HomeController - ?" />
     <MESSAGE value="WORK (HomeController-?)" />
-    <option name="LAST_COMMIT_MESSAGE" value="WORK (HomeController-?)" />
+    <MESSAGE value="index, show, edit, create, store, update, delete" />
+    <MESSAGE value="index, show, edit, create, store, update, delete перенос в Database" />
+    <option name="LAST_COMMIT_MESSAGE" value="index, show, edit, create, store, update, delete перенос в Database" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Auth.php" />
@@ -482,13 +486,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/update.php" />
     <entry file="file://$PROJECT_DIR$/app/views/delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -496,37 +494,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="e#6#37#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/show.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/store.php" />
     <entry file="file://$PROJECT_DIR$/bufer/views/tasks/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -551,26 +519,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/create.php">
+    <entry file="file://$PROJECT_DIR$/app/views/show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        <state relative-caret-position="80">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="440">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="89" column="1" lean-forward="true" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/TasksController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="96" column="48" lean-forward="true" selection-start-line="96" selection-start-column="48" selection-end-line="96" selection-end-column="48" />
+        <state relative-caret-position="300">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
-            <element signature="e#65#90#0#PHP" expanded="true" />
+            <element signature="e#65#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="e#6#37#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
